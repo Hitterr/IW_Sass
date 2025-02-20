@@ -1,0 +1,66 @@
+.button, .profile-card .btn-primary:hover, .profile-card .btn-primary {
+  width: 200px;
+  height: 40px;
+  border-radius: 2px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 0.7em;
+  transition: all 0.5s ease-in-out;
+  border: solid 2px #ff0000;
+  font-weight: bold;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Courier New", Courier, monospace;
+  transition: all 1s ease-in-out;
+}
+
+.profile-card {
+  display: flex;
+  background: #222;
+  color: #fff;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  box-shadow: grey 0px 10px 10px;
+}
+.profile-card .profile-img img {
+  width: 150px;
+  height: 150px;
+  border: solid 3px #ff0000;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+.profile-card .btn-primary {
+  background-color: #ff0000;
+  color: #fff;
+}
+.profile-card .btn-primary:hover {
+  background-color: #ffc800;
+  color: #222;
+  border: solid 2px #ffc800;
+}
+.profile-card .profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 20px;
+}
+.profile-card .profile-info * {
+  margin: 0;
+}
+.profile-card .profile-info h2 {
+  text-transform: uppercase;
+}
+
+/*# sourceMappingURL=styles.css.map */

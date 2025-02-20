@@ -1,0 +1,33 @@
+@import "mixins";
+@import "variables";
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	font-family: "Courier New", Courier, monospace;
+	transition: all 1s ease-in-out;
+}
+.profile-card {
+	@include profile-card;
+	.profile-img {
+		img {
+			@include profile-img;
+		}
+	}
+	.btn-primary {
+		@include btn-primary;
+	}
+	.btn-primary:hover {
+		@include btn-primary-hover;
+	}
+	.profile-info {
+		@include profile-info;
+		* {
+			margin: 0;
+		}
+		h2 {
+			text-transform: uppercase;
+		}
+	}
+}

@@ -1,0 +1,52 @@
+@import "variables.scss";
+@mixin profile-card {
+	display: flex;
+	background: $dark;
+	color: $light;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	border-radius: 10px;
+	padding: 20px;
+	margin: 20px;
+	width: 300px;
+	box-shadow: grey 0px 10px 10px;
+	// border: solid 2px $primary;
+}
+@mixin profile-img {
+	width: 150px;
+	height: 150px;
+	border: solid 3px $primary;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+.button {
+	width: 200px;
+	height: 40px;
+	border-radius: 2px;
+	border: none;
+	text-transform: uppercase;
+	font-size: 0.7em;
+	transition: all 0.5s ease-in-out;
+	border: solid 2px $primary;
+	font-weight: bold;
+}
+@mixin btn-primary {
+	@extend .button;
+	background-color: $primary;
+	color: $light;
+}
+@mixin btn-primary-hover {
+	@extend .button;
+	background-color: $secondary;
+	color: $dark;
+	border: solid 2px $secondary;
+}
+@mixin profile-info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	gap: 20px;
+	padding: 20px;
+}
